@@ -4,7 +4,7 @@ Git workflow exercises
 The exercises should be worked on in groups of two people.
 Start with forking this repository (each one of you), and decide which of the two
 forks should act as the "main repository". Note that the exercises
-build upon each other, so you need, for instance,  exercise 1 to be completed before
+build upon each other, so you need, for instance, exercise 1 to be completed before
 you can continue with exercise 2.
 
 Typically, each one of you will have to make one of the already existing tests pass. 
