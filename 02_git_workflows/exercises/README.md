@@ -14,8 +14,6 @@ To run only the test you are working on, use `python3 -m pytest FILE.py -k TESTN
 
 ## Exercise 1
 
-- commit `exercise1.py` into the repository and push it
-- make sure both of you have this state of the repository on your local machines
 - distribute the two tasks and work on them in parallel:
   - create a branch for your task, giving it an appropriate name
   - commit the solution to your task in a single commit with appropriate name
