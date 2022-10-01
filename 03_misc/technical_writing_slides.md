@@ -88,7 +88,7 @@ Bangerth and Heister, 2013: [What makes computational open source software libra
 
 - ... is a job profile between technical know-how (computer science, engineering, ...) and language.
 - ... can be a role in a software development team (*"documentation"*).
-- There is whole community, e.g. [Write the Docs](https://www.writethedocs.org/).
+- There is a whole community, e.g. [Write the Docs](https://www.writethedocs.org/).
 
 Much content of this lecture is taken from [Write the Docs](https://www.writethedocs.org/).
 
