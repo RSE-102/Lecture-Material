@@ -8,7 +8,7 @@
 #     - make the function bodies more readable
 #     - clean up the test code where beneficial
 #     - make sure to put each individual change in a small, separate commit
-#     - guarantee that on each commit, all tests pass
+#     - take care that on each commit, all tests pass
 from typing import Tuple
 from dataclasses import dataclass
 
