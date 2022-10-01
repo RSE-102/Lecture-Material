@@ -1,9 +1,8 @@
- # Demo: Automation with GitHub Actions
+# Demo: Automation with GitHub Actions
 
 ## 1. Setting up a Test Job
 
-- Go to [repository](https://github.com/Simulation-Software-Engineering/automation-lecture) an check out tag `initial-state`.
-- Create a new branch `lecture-branch`
+- Clone [automation lecture repository](https://github.com/RSE-102/automation-lecture)
 - Set up workflow file
 
   ```bash
