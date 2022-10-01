@@ -459,7 +459,7 @@ Android's ActionBar class:
     - *The bird specified by the given ID.*
     - *True if the bird is in the sanctuary; false otherwise.*
 
-Example: [preCICE API](https://precice.org/doxygen/master/classprecice_1_1SolverInterface.html)
+Example: [preCICE API](https://precice.org/doxygen/main/classprecice_1_1SolverInterface.html)
 
 ---
 
