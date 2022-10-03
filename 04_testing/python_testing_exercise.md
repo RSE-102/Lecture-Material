@@ -2,8 +2,8 @@
 
 ## Starting remarks
 
-- [Exercise repository link]()
-- Try to structure all the tests in a format similar to what is shown in the [demo code](https://github.com/Simulation-Software-Engineering/Lecture-Material/blob/main/05_testing_and_ci/examples/python_testing).
+- [Exercise repository link](https://github.com/RSE-102/diffusion2D-testing-exercise).
+- Try to structure all the tests in a format similar to what is shown in the [automation-lecture](https://github.com/RSE-102/automation-lecture).
 
 ## Prerequisites
 

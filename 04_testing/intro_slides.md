@@ -27,11 +27,11 @@ slideOptions:
 
 ---
 
-## Learning goals of the chapter
+## Learning goals
 
-- What is it important to test simulation software
-- What are the concepts of unit testing, integration testing and regression testing and how to write such tests for a simulation software
-- How to use the Python testing frameworks `pytest` and `unittest` to generate a automated testing workflow
+- Why is it important to test simulation software?
+- What are the concepts of unit testing, integration testing and regression testing and how to write such tests for a simulation software?
+- How to use the Python testing frameworks `pytest` and `unittest` to generate a automated testing workflow?
 
 ---
 

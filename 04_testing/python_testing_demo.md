@@ -1,6 +1,6 @@
 # Notes for Demos of Python Testing Frameworks
 
-Example code is in [04_testing/examples]().
+Example code is in [automation-lecture repository](https://github.com/RSE-102/automation-lecture).
 
 ## Software code used
 
