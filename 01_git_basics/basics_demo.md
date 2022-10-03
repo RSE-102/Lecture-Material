@@ -12,7 +12,7 @@
 ![git overview picture from py-rse](https://merely-useful.tech/py-rse/figures/git-cmdline/git-remote.png)
 
 - `git --help`, `git commit --help`
-- incomplete statement `git comm`
+- incomplete statement `git co`
 
 - There is a difference between Git and hosting services ([*forges*](https://en.wikipedia.org/wiki/Forge_(software)))
     - [GitHub](https://github.com/)
@@ -22,7 +22,7 @@
     - many more
     - often, more than just hosting, also DevOps
 
-- Give outlook on remainder of Git chapter: *How I work with Git*, quiz, advanced topics (workflows, rebase, standards), *my neat little Git trick*
+- Give outlook on remainder of Git chapter: *How I work with Git*, advanced topics (workflows, rebase), exercise
 
 ## How I work with Git
 
