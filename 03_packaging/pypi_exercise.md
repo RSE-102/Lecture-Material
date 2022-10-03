@@ -98,7 +98,7 @@ diffusion2d.solve()
 
 ## Step 8 - Submitting the exercise
 
-- Open a pull request with the name `Packaged code for PyPI by <your-GitLab-username>` from your fork to the `main` branch of the exercise repository.
+- Open a pull request with the name `Packaged code for PyPI by <your-GitHub-username>` from your fork to the `main` branch of the exercise repository.
 
 ## Optional: Using Versioneer to handle versioning of code
 
