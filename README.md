@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This is course material for a one-week graduate school block course, which is regularly given at the University of Stuttgart. The block course emerged from material of the two master lectures [Simulation Software Engineering](https://simulation-software-engineering.github.io) and [Sustainable Development of Simulation Software](https://campus.uni-stuttgart.de/cusonline/pl/ui/$ctx/wbLv.wbShowStellungInStp?pStpSpNr=341513) in an effort to teach better research software engineering skills to PhD students.
+This is course material for a one-week graduate school block course, which is regularly given at the University of Stuttgart. The block course emerged from material of the two master lectures [Simulation Software Engineering](https://simulation-software-engineering.github.io) and [Sustainable Development of Simulation Software](https://gitlab.com/sustainable-simulation-software/course-material) in an effort to teach better research software engineering skills to PhD students.
 
 **Why 102?** We do not start from scratch, but assume a certain pre-knowledge from participants -- knowledge typically taught in Software Carpentry Workshops: Unix shell, Git basics, and Python. We want to build on these fundamentals and study methods and tools used to ensure good (research) software engineering:
 
