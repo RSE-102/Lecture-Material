@@ -120,4 +120,4 @@ pytest tests/unit/test_diffusion2d_functions.py
 
 ## Submission
 
-- Open a pull request titled `Adding unit and integration tests by <GitLab username>` from your fork to the main repository.
+- Open a pull request titled `Adding unit and integration tests by <GitHub username>` from your fork to the main repository.
