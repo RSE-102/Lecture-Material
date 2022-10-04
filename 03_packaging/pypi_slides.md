@@ -93,7 +93,6 @@ setup(
     url="package-website-url",
     package_dir={"": "<directory-name>"},
     packages=setuptools.find_packages(where="<directory-name>"),
-    python_requires=">=3.6",
     install_requires=["<dependencies>"]
     entry_points={
       'console_scripts': ['package-import-name = <path-to-main-function-with-dots>']
@@ -119,7 +118,6 @@ description="A small description"
 packages = find:
 install_requires =
   "<dependencies>"
-  python_version>"3.6"
 
 [options.entry_points]
 console_scripts =
@@ -153,9 +151,7 @@ requires = ["setuptools", "wheel"]
 name = "package-name"
 description = "A small description"
 readme = "README.md"
-requires-python = ">=3.6"
 keywords = ["keyword1", "keyword2"]
-license = {text = "BSD License"}
 classifiers = [
     "Programming Language :: Python :: 3"
 ]
@@ -432,7 +428,7 @@ Both the commands must be run in the same directory as `setup.py`.
     - Secure authentication of the user to PyPI over HTTPS using a verified connection.
     - Its predecessor `python setup.py upload` required careful configuration.
     - Encourages users to create distribution files to promote testing before releasing.
-- The archive files are uploaded to a package index from where pip can get them
+- The archive files are uploaded to a package index from where pip can get them.
 
 ---
 
