@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt update -y
+RUN apt update -y && apt install -y neofetch
 WORKDIR /app
 COPY testfile .
 CMD ["echo", "hello"]
