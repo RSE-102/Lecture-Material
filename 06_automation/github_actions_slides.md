@@ -137,9 +137,9 @@ jobs:
 ## User-specified Commands
 
 ```yaml
-- name: Single line command
+- name: "Single line command"
   run: echo "Single line command"
-- name: Multi line command
+- name: "Multi line command"
   run: |
     echo "First line"
     echo "Second line. Directory ${PWD}"
@@ -197,7 +197,7 @@ steps:
 - Uploading artifact
 
   ```yaml
-  - name: 'Upload Artifact'
+  - name: "Upload artifact"
     uses: actions/upload-artifact@v2
     with:
       name: my-artifact
@@ -208,7 +208,7 @@ steps:
 - Downloading artifact
 
   ```yaml
-  - name: Download a single artifact
+  - name: "Download a single artifact"
     uses: actions/download-artifact@v2
     with:
       name: my-artifact
