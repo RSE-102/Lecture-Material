@@ -49,7 +49,7 @@
 
 ## 2. Extend Action to Have Several Dependent Jobs
 
-- Go to tag `github-action-added` of the repository. The workflow should have the following content:
+- Adding additional jobs by editing on GitHub. The workflow should have the following content:
 
   ```yaml
   name: Testing workflow
@@ -65,7 +65,7 @@
           with:
             python-version: '3.8.10'
         - name: "Install style checker"
-          run: pip install --user black
+          run: pip install black
         - name: "Run style check"
           run: black --check .
     build:
@@ -108,8 +108,6 @@
 ## 4. act Demo
 
 - `act` is for quick checks while developing workflows, not for developing the code
-- doesn't find `black` (does not behave 100% the same way as GitHub)
-- delete `needs` from `build` step
 - Check available jobs
 
   ```bash
