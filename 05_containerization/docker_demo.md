@@ -1,58 +1,3 @@
-# Docker quiz
-
-- Quiz "What is Docker?"
-    - Start slido quiz
-    - Answer depends on when in time and    you ask.
-        - Containerization framework, container management, company...
-
-## Introduction to Docker and some practical examples
-
-- [`act`](https://github.com/nektos/act) is a tool to debug/run GitHub actions locally
-- The most popular container framework one finds at the moment
-- Short backstory:
-    - Started as wrapper around lxc/lxd (Linux' native container format)
-- Docker, Docker Engine, Docker Compose, Docker Hub? What is going on?
-- Server-client layout
-- Quite strong encapsulation from Host (**TODO**: Check for file exchange, networking etc.)
-- **Generally useful commands** (see slides as well)
-    - `docker run OPTIONS`
-        - Run a container
-    - `docker image ls`
-        - List locally available images
-    - `docker pull NAME:TAG`
-        - Pulls an image from registry, `TAG` optional
-    - `docker container create IMAGE`
-        - Create container from image
-    - `docker container ls`
-        - List running containers
-        - Add `-a` to see all containers
-    - `docker container start/stop NAME`
-        - Start/stop container
-    - `docker container attach NAME`
-        - Attach to running container
-    - `docker build`
-        - Creates an image from a given Dockerfile
-    - `docker cp`
-        - Copy files in/out of container
-    - `docker image history IMAGE`
-        - Show layers of image (including commands)Vagrant
-    - `docker system prune`
-        - Remove all unused objects (images, containers...)
-    - `docker logs ID/NAME`
-        - Shows log files of container
-- Explain text-based format (infrastructure as code)
-- One can pre-build own images to reuse them later.
-- Has a layer based build process (which is nice). We do not have to rebuild from scratch, if build fails.
-- Images can be shared via DockerHub or other registries
-- Building an image can be pain in the neck as it depends on a fast internet connection.
-- Installation issue/security risks: Docker user group is basically root
-    - Rootless installation of Docker
-    - Namespaces
-    - Docker considers itself quite safe
-- We focus on tools to create, run and interact with containers
-
-Source: [https://docs.docker.com/get-started/overview/](https://docs.docker.com/get-started/overview/)
-
 ## Demo: Run existing container
 
 - Show containers on [DockerHub](https://hub.docker.com/)
@@ -119,7 +64,7 @@ docker run -it new-image-name /bin/bash
 ```Dockerfile
 FROM ubuntu:22.04
 
-RUN apt update -y
+RUN apt update -y && apt install -y neofetch
 WORKDIR /app
 COPY testfile .
 CMD ["echo", "hello"]
