@@ -1,6 +1,6 @@
 ---
 title: Containerization with Docker
-author: Alexander Jaust, Bernd Flemisch, Sarbani Roy
+author: Alexander Jaust, Bernd Flemisch
 institute: University of Stuttgart
 type: slide
 slideOptions:
@@ -8,32 +8,23 @@ slideOptions:
   width: 1400
   height: 900
   margin: 0.1
-theme: "Frankfurt"
-colortheme: "beaver"
-fonttheme: structurebold
+  theme: solarized
 ---
+
 <style>
-  .reveal strong {
-  font-weight: bold;
-      color: orange;
-  }
-  .reveal p {
-      text-align: left;
-  }
-  .reveal section h1 {
-      color: orange;
-  }
-  .reveal section h2 {
-      color: orange;
-  }
+.reveal section img { background:none; border:none; box-shadow:none; }
 </style>
 
-# Docker
+# Containerization with Docker
 
-![[https://www.docker.com/company/newsroom/media-resources](https://www.docker.com/company/newsroom/media-resources)](Moby-logo.jpg){ width=60% }
+<img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" width=40%; style="margin-left:auto; margin-right:auto; padding-top: 25px; padding-bottom: 25px">
+
+[https://www.docker.com/company/newsroom/media-resources](https://www.docker.com/company/newsroom/media-resources)
 
 
-# What is Docker?
+---
+
+## What is Docker?
 
 - According to documentation: Docker is an open platform for developing, shipping, and running applications.
 
@@ -47,8 +38,9 @@ fonttheme: structurebold
 
 - Docker Inc.: Company promoting Docker.
 
+---
 
-# Introduction
+## Introduction
 
 - 2010: Docker Inc. founded.
 
@@ -60,8 +52,9 @@ fonttheme: structurebold
 
 - Nowadays one of the most popular container frameworks/services.
 
+---
 
-# Typical Docker Applications
+## Typical Docker Applications
 
 - Applications as Microservices.
 
@@ -73,13 +66,17 @@ fonttheme: structurebold
 
 - Avoid tedious installation procedures by providing Docker container ([FEniCS](https://fenicsproject.org/download/), [GitLab](https://docs.gitlab.com/ee/install/docker.html)...).
 
+---
 
-# Docker Architecture
+## Docker Architecture
 
-![[https://docs.docker.com/engine/images/architecture.svg](https://docs.docker.com/engine/images/architecture.svg)](docker_architecture.jpg){ width=80% }
+<img src="https://docs.docker.com/engine/images/architecture.svg" width=80%; style="margin-left:auto; margin-right:auto; padding-top: 25px; padding-bottom: 25px">
 
+[https://docs.docker.com/engine/images/architecture.svg](https://docs.docker.com/engine/images/architecture.svg)
 
-# Building Blocks
+---
+
+## Building Blocks
 
 - Docker daemon `dockerd`
 
@@ -95,8 +92,9 @@ fonttheme: structurebold
 
     * Registries that manage Docker images to be used.
 
+---
 
-# Docker objects
+## Docker objects
 
 - **Images**
 
@@ -108,8 +106,9 @@ fonttheme: structurebold
 
     * Runnable instance of an image.
 
+---
 
-# Connection to Host
+## Connection to Host
 
 - Container communicates via daemon `dockerd` (runs as root).
 
@@ -119,8 +118,9 @@ fonttheme: structurebold
 
     * Several [mount options](https://docs.docker.com/storage) available.
 
+---
 
-# Requirements
+## Requirements
 
 - Root rights for installation.
 
@@ -128,7 +128,7 @@ fonttheme: structurebold
 
     * Prefix commands with `sudo`.
     * Be member of group `docker` (=makes you root), expected by some applications (e.g. `act`).
-    * [Attack surface?!](https://docs.docker.com/engine/security/#docker-daemon-attack-surface)
+    * [Attack surface?!](https://docs.docker.com/engine/security/##docker-daemon-attack-surface)
 
         + [Isolate user namespace](https://docs.docker.com/engine/security/userns-remap/).
         + Use trustworthy containers.
@@ -140,8 +140,9 @@ fonttheme: structurebold
 
 - Check [security notes](https://docs.docker.com/engine/security/).
 
+---
 
-# Useful Commands 1/2
+## Useful Commands 1/2
 
 - `docker run OPTIONS`: Run a container.
 
@@ -151,10 +152,11 @@ fonttheme: structurebold
 
 - `docker container create IMAGE`: Create container from image.
 
-- `docker container ls`: List running containers, add `-a` to see all.
+- `docker container ls` or `docker ps`: List running containers, add `-a` to see all.
 
+---
 
-# Useful Commands 2/2
+## Useful Commands 2/2
 
 - `docker container start/stop NAME`: Start/stop container.
 
@@ -168,13 +170,15 @@ fonttheme: structurebold
 
 - `docker system prune`: Remove all unused objects (images, containers...).
 
+---
 
-# Demo: Running prebuilt images
+## Demo: Running prebuilt images
 
 <!--Details available in [`docker_demo.md`](https://github.com/Simulation-Software-Engineering/Lecture-Material/blob/main/02_virtualization_and_containers/docker_demo.md)-->
 
+---
 
-# Defining and Building own Images 1/2
+## Defining and Building own Images 1/2
 
 - Define container in `Dockerfile`
 
@@ -194,8 +198,9 @@ fonttheme: structurebold
 
 - Container (layers) have commit hashes.
 
+---
 
-# Defining and Building own Images 2/2
+## Defining and Building own Images 2/2
 
 - `FROM`: Defines base image.
 
@@ -213,8 +218,9 @@ fonttheme: structurebold
 
 - `ARG`: Environment variable for **only** build process.
 
+---
 
-# Dockerfile Simple Example
+## Dockerfile Simple Example
 
 ```Dockerfile
 FROM ubuntu:22.04
@@ -225,56 +231,104 @@ COPY testfile .
 CMD ["echo", "hello"]
 ```
 
+---
 
-# Dockerfile Example from Automation
+## Dockerfile Example from DuMux-Pub
 
 ```Dockerfile
-FROM ubuntu:22.04
+# densitydrivendissolution docker container
+# see https://github.com/phusion/baseimage-docker for information on the base image
+# It is Ubuntu LTS customized for better Docker compatibility
+FROM phusion/baseimage:focal-1.1.0
+MAINTAINER bernd@iws.uni-stuttgart.de
 
-# install basic dependencies, curl & graphics libs are required for paraview
+# run Ubuntu update as advised on https://github.com/phusion/baseimage-docker
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get upgrade -y -o Dpkg::Options::="--force-confold" \
-    && apt-get install --no-install-recommends --yes \
-        libcurl4 libgomp1 libgl1-mesa-glx libglu1-mesa libegl1-mesa \
-        python3-dev \
-        python3-pip \
-        wget \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Get a headless version of paraview. This is not optimal, but the standard
-# package installed via apt-get is not headless, causing errors due to graphics
-# drivers. There are also paraview images, but there we had problems installing
-# missing python packages.
-ARG PVVERSION="ParaView-5.10.1-egl-MPI-Linux-Python3.9-x86_64"
-RUN URL="https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v5.10&type=binary&os=Linux&downloadFile=${PVVERSION}.tar.gz" \
-    && wget "$URL" -O ${PVVERSION}.tar.gz \
-    && tar -xvf ${PVVERSION}.tar.gz \
-    && rm ${PVVERSION}.tar.gz
-ENV PATH="${PATH}:/${PVVERSION}/bin"
+# install the basic dependencies
+RUN apt-get update \
+    && apt-get install --no-install-recommends --yes \
+    ca-certificates \
+    vim \
+    python3-dev \
+    python3-pip \
+    git \
+    pkg-config \
+    build-essential \
+    cmake \
+    gfortran \
+    mpi-default-bin \
+    mpi-default-dev \
+    libsuitesparse-dev \
+    libsuperlu-dev \
+    libeigen3-dev \
+    doxygen \
+    wget \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-WORKDIR /my_simulation
-VOLUME /my_simulation
+# add the permission helper script to the my_init service
+COPY setpermissions.sh /etc/my_init.d/setpermissions.sh
 
-# Install python depenendencies
-RUN python3 -m pip install matplotlib
+# create a dumux user
+# add the welcome message (copied further down) output to bashrc
+# make the set permission helper script executable
+# add user to video group which enables graphics if desired
+RUN useradd -m --home-dir /dumux dumux \
+    && echo "cat /dumux/WELCOME" >> /dumux/.bashrc \
+    && chmod +x /etc/my_init.d/setpermissions.sh \
+    && usermod -a -G video dumux
 
-# It is generally better if you get the ressources from a persistent source!
-COPY make_plot_data.py .
-COPY plot.py .
-COPY pvstate.pvsm .
-COPY render_state.py .
-COPY simulation.py .
-COPY automation.sh .
+# switch to the dumux user and set the working directory
+USER dumux
+WORKDIR /dumux
+
+# create a shared volume communicating with the host
+RUN mkdir /dumux/shared
+VOLUME /dumux/shared
+
+# This is the message printed on entry
+COPY WELCOME /dumux/WELCOME
+
+# set git user in case installation requires to apply patches
+RUN git config --global user.name "densitydrivendissolution"
+RUN git config --global user.email "st111492@stud.uni-stuttgart.de"
+
+# Install the dumux module and its dependencies
+# This expects the install script to do everything from clone to configure
+COPY installscript.sh /dumux/installscript.sh
+RUN ./installscript.sh && rm -f /dumux/installscript.sh
+
+# unset git user
+RUN git config --global --unset user.name
+RUN git config --global --unset user.email
+
+# switch back to root
+WORKDIR /dumux
+USER root
+
+# set entry point like advised https://github.com/phusion/baseimage-docker
+# this sets the permissions right, see above
+ENTRYPOINT ["/sbin/my_init","--quiet","--","/sbin/setuser","dumux","/bin/bash","-l","-c"]
+
+# start interactive shell
+CMD ["/bin/bash","-i"]
 ```
+[https://git.iws.uni-stuttgart.de/dumux-pub/buerkle2021a/-/blob/master/docker/Dockerfile](https://git.iws.uni-stuttgart.de/dumux-pub/buerkle2021a/-/blob/master/docker/Dockerfile)
+
+---
 
 # Demo: Building own image
 
 <!--Details available in [`README.md`](https://github.com/Simulation-Software-Engineering/Lecture-Material/blob/main/02_virtualization_and_containers/README.md)-->
 
+---
 
-# Publish own Images
+## Publish own Images
 
 - Publication on registry (e.g. [DockerHub](https://hub.docker.com/)).
 
@@ -288,8 +342,9 @@ COPY automation.sh .
 
     * Needs account and must be logged in via `docker login`.
 
+---
 
-# Advanced Topics
+## Advanced Topics
 
 - User ID mapping.
 
@@ -297,7 +352,7 @@ COPY automation.sh .
 
     * Build image by combining layers created from different base images.
 
-- [Different mount typs](https://docs.docker.com/storage)
+- [Different mount types](https://docs.docker.com/storage)
 
     * Volumes, bind mount, tmpfs mount.
 
@@ -307,8 +362,9 @@ COPY automation.sh .
 
 - And many more. Check out the [Docker documentation](https://docs.docker.com).
 
+---
 
-# Summary and Outlook
+## Summary and Outlook
 
 - Lightweight virtualization technique.
 
@@ -322,8 +378,9 @@ COPY automation.sh .
 
 - Important building block for CI/CD pipelines (future lectures).
 
+---
 
-# Further Reading
+## Further Reading
 
 - [Docker](https://www.docker.com/)
 

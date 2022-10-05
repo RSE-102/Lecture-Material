@@ -101,65 +101,38 @@ Source: [https://docs.docker.com/get-started/overview/](https://docs.docker.com/
     - Bind mount your source code for development for example
     - I do not need `/bin/bash` because that is the default command for the `ubuntu` image.
 
-## Restarting a stopped container with arbitrary command
+## Restarting a stopped container
 
-- This is currently not possible. The default command or entrypoint is part of the runnable container. One has to create a new container from the stopped container to start it with another command
-- See also GitHub issues
-    - [docker exec into a stopped container](https://github.com/moby/moby/issues/18078). There is also a workaround mentioned in this issue
-
-        ```bash
-        docker commit $STOPPED_CONTAINER user/test_image
-        docker run -ti --entrypoint=sh user/test_image
-        ```
-
-        Also interesting quote
-
-        > The main reason why is because containers are supposed to be immutable. You cannot exec into a stopped container because it has to be running first.
-
-    - [`docker exec` in stopped containers](https://github.com/moby/moby/issues/30361)
-- See some workaround on [StackOverflow](https://stackoverflow.com/questions/32353055/how-to-start-a-stopped-docker-container-with-a-different-command)
-    - Find container id `docker container list -a`
-    - Commit stopped container to save its modifed state into a new image `docker commit CONTAINERID USER/IMAGENAME`
-    - Start new container with differnt entry point `docker run -ti --entrypoint=sh USER/IMAGENAME` if an entrypoint is specified in the previews image or `docker run -ti USER/IMAGENAME /bin/sh`
-    - For details on the difference between entry points (`ENTRYPOINT`) and the default for executing a container (`CMD`) check the [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
+- This is currently not possible. The default command or entrypoint is part of the runnable container. One has to create a new image from the stopped container to start it with another command
+- Add a file in a base image, exit the container
+- Get the container ID by `docker ps -a`
+```bash
+docker commit $STOPPED_CONTAINER new-image-name
+docker run -it new-image-name /bin/bash
+```
 
 ## Demo: Building own example
 
 - `cd dockerfile-example`
 - Contains Dockerfile
 
-    ```Dockerfile
-    FROM ubuntu:18.04
+```Dockerfile
+FROM ubuntu:22.04
 
-    RUN apt update -y && apt install -y neofetch
-    WORKDIR /app
-    COPY testfile .
-    CMD ["echo", "hello"]
-    ```
+RUN apt update -y
+WORKDIR /app
+COPY testfile .
+CMD ["echo", "hello"]
+```
 
 - `docker build --tag testimage .`
 - `docker run -i -t testimage /bin/bash`
 - `docker run testimage` will run container and `CMD` will be executed
-- `docker run -d -i -t --name testimage testimage` will immediately terminate since the container `CMD` is executed.
-- `docker run -d -i -t --name testimage testimage /bin/bash` keeps container alive since the terminal session is running inside.
 - Create file `touch testfile`, if not present.
-- `docker run -i -t --name testimage -v $(pwd):/app -w /app testimage /bin/bash` starts container, creates volume `/app` and sets working directory to /app
 - When going into the container we are in the directory `/app` and the file `testfile` is present.
 - Copy files with `docker cp`. `touch file-to-copy`
 - `docker cp file-to-copy CONTAINERNAME:/app`
 - `docker cp CONTAINERNAME:/app file-to-copy`
 - This will fix preserve user and group id
+- `docker run -i -t -v $(pwd):/app testimage /bin/bash` starts container, creates volume `/app` and sets working directory to /app
 
-## Demo: DuMuX Dockerfile
-
-- Show more complicated Dockerfile example (`dumux-precice`)?
-    - `~/container-recipes/docker/dumux-precice/ub2004/dumux-3.4-precice-2.2.1`. Also in branch of [`dumux-precice` repository](https://git.iws.uni-stuttgart.de/dumux-appl/dumux-precice/-/blob/add-docker-images/docker/dumux-3.4-precice-2.2.1.dockerfile)+
-    - Uses most/all commands on slides
-
-## Demo: FEniCS example
-
-`docker run -ti -p 127.0.0.1:8000:8000 -v $(pwd):/home/fenics/shared -w /home/fenics/shared quay.io/fenicsproject/stable:current`
-
-- `-v` creates a volume in the container and mounts the current directory on Host to path `/home/fenics/shared` inside the container
-- `-w` sets the working directory to /home/fenics/shared
-- Volume allows for persistent data
