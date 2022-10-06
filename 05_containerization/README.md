@@ -11,8 +11,10 @@ For Ubuntu, for example:
 sudo apt-get remove docker docker-engine docker.io containerd runc
 
 curl -fsSL https://get.docker.com -o get-docker.sh
-
 sudo sh get-docker.sh
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
 
 docker run hello-world
 ```
