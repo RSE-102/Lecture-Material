@@ -15,7 +15,11 @@ sudo sh get-docker.sh
 
 sudo groupadd docker
 sudo usermod -aG docker $USER
+```
 
+Log out and back in again so that your group membership is re-evaluated.
+
+```bash
 docker run hello-world
 ```
 
