@@ -9,7 +9,7 @@ This exercise consists of the following main steps:
 1. Select an application.
 2. Create a fork of the GitHub repository ["Containerization Exercise"](https://github.com/RSE-102/containerization-exercise).
 3. Set up the `Dockerfile`.
-4. Create a merge request containing your changes.
+4. Create a pull request containing your changes.
 
 ### 1. Select an Application
 
@@ -34,14 +34,14 @@ Follow the link in the task list above and fork the repository. The repository i
     - **Note:** If you rebuild your container often, you might end up with dangling containers. You can remove them (and unused images, containers, or objects) with [`docker [image|container|system] prune`)](https://docs.docker.com/engine/reference/commandline/system_prune/) depending on what you want to remove.
 - Add a `README.md` which explains how to build the image, instantiate a container and run the application.
 
-### 4. Create a Merge Request
+### 4. Create a Pull Request
 
 - Open a merge request in the GitHub Repository ["Containerization Exercise"](https://github.com/RSE-102/containerization-exercise).
     - As title choose "[`USERNAME`] Docker Container Recipe", where `USERNAME` is your GitHub username.
     - Put all required local files under version control.
     - Assign the merge request to `berndflemisch`.
     - Double-check that all files are in the repository and up to date.
-    - If everything looks good, create the merge request.
+    - If everything looks good, create the pull request.
 
 ## Further Information
 
@@ -55,5 +55,4 @@ Follow the link in the task list above and fork the repository. The repository i
 ## Optional Tasks
 
 - Publish a [Docker base image](https://docs.docker.com/develop/develop-images/baseimages/) to DockerHub.
-    - Link the published DockerHub repository in the issue.
-    - Please add all files (`Dockerfile` etc.) that you have used to set up this container and shortly describe which commands you have used to do so.
+    - Link the published DockerHub repository in the pull request.
