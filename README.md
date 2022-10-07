@@ -50,6 +50,10 @@ The next course runs from Tuesday, October 4 to Friday October 7, 2022, with a *
 
 How did you apply the newly learned skills in your work? Which problems did you face?
 
+## Evaluation
+
+Please help use improving this course by filling out [the evaluation]()https://docs.google.com/forms/d/e/1FAIpQLSeHBcfCiQXANeaRj2c9YQ6n4_BK6WENbsOkgL9P-zO00Y8UEw/viewform?usp=sf_link).
+
 ## Credits
 
 - The Simulation Software Engineering lecture was originally developed by [Ishaan Desai](https://github.com/IshaanDesai), [Alexander Jaust](https://github.com/ajaust), and [Benjamin Uekermann](https://github.com/uekerman). [Many students](https://github.com/Simulation-Software-Engineering/Lecture-Material/graphs/contributors) helped improving the content.
