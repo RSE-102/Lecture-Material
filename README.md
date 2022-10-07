@@ -52,7 +52,7 @@ How did you apply the newly learned skills in your work? Which problems did you 
 
 ## Evaluation
 
-Please help use improving this course by filling out [the evaluation]()https://docs.google.com/forms/d/e/1FAIpQLSeHBcfCiQXANeaRj2c9YQ6n4_BK6WENbsOkgL9P-zO00Y8UEw/viewform?usp=sf_link).
+Please help use improving this course by filling out [the evaluation](https://docs.google.com/forms/d/e/1FAIpQLSeHBcfCiQXANeaRj2c9YQ6n4_BK6WENbsOkgL9P-zO00Y8UEw/viewform?usp=sf_link).
 
 ## Credits
 
