@@ -16,7 +16,8 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 
 ## Timetable and content
 
-The next course runs from Tuesday, October 4 to Friday October 7, 2022, with a *reflection day* on December 6, 2022.
+- The current course runs from Tuesday, October 4 to Friday October 7, 2022, with a *reflection day* on December 6, 2022.
+- The next course runs from Monday, **October 9 to Friday October 13, 2023**, with a *reflection day* on December tbd., 2023.
 
 ### Day 1: Git and misc
 
@@ -49,6 +50,9 @@ The next course runs from Tuesday, October 4 to Friday October 7, 2022, with a *
 ### Reflection day
 
 How did you apply the newly learned skills in your work? Which problems did you face?
+Each participant should prepare a 5-10 minutes presentation. There is enough time for in-depth discussions.
+
+- 13:30-17:00: Presentations of participants
 
 ## Evaluation
 
