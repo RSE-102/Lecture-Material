@@ -16,8 +16,9 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 
 ## Timetable and content
 
-- The current course runs from Tuesday, October 4 to Friday October 7, 2022, with a *reflection day* on December 6, 2022.
-- The next course runs from Monday, **October 9 to Friday October 13, 2023**, with a *reflection day* on December tbd., 2023.
+- The first course ran from Tuesday, October 4 to Friday October 7, 2022, with a *reflection day* on December 6, 2022.
+- There will be **no course in 2023**. Instead, we will organize a week-long summer school on *Research Software Engineering with Julia: Basics, Visualization, and Statistics* running from Monday, October 9 to Friday October 13, 2023. More information will follow.
+- Presumably, we will organize the orginal RSE 102 in **October 2024** again.
 
 ### Day 1: Git and misc
 
