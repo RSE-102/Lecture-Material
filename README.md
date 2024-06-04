@@ -14,11 +14,16 @@ This is course material for a one-week graduate school block course, which is re
 
 Skills in these areas are crucial for developing or contributing to quality-assured software in collaborative environments and are very useful in today’s research landscape.
 
+## Courses
+
+- We typically give the course just before the lecture period in winter term.
+- Next course will be **October 7-11, 2024** with the *reflection day* on **December 10, 2024**.
+- The first course ran from Tuesday, October 4 to Friday October 7, 2022, with the *reflection day* on December 6, 2022.
+- There was no course in 2023. Instead, we organized a week-long summer school on [Research Software Engineering with Julia: Basics, Visualization, and Statistics](https://www.simtech.uni-stuttgart.de/events/simtech-summer-school/SuSch_2/)
+
 ## Timetable and content
 
-- The first course ran from Tuesday, October 4 to Friday October 7, 2022, with a *reflection day* on December 6, 2022.
-- There will be **no course in 2023**. Instead, we will organize a week-long summer school on *Research Software Engineering with Julia: Basics, Visualization, and Statistics* running from Monday, October 9 to Friday October 13, 2023. More information will follow.
-- Presumably, we will organize the orginal RSE 102 in **October 2024** again.
+- WIP: We will extend the program to five days in 2024.
 
 ### Day 1: Git and misc
 
@@ -53,16 +58,11 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 How did you apply the newly learned skills in your work? Which problems did you face?
 Each participant should prepare a 5-10 minutes presentation. There is enough time for in-depth discussions.
 
-- 13:30-17:00: Presentations of participants
-
-## Evaluation
-
-Please help use improving this course by filling out [the evaluation](https://docs.google.com/forms/d/e/1FAIpQLSeHBcfCiQXANeaRj2c9YQ6n4_BK6WENbsOkgL9P-zO00Y8UEw/viewform?usp=sf_link).
-
 ## Credits
 
 - The Simulation Software Engineering lecture was originally developed by [Ishaan Desai](https://github.com/IshaanDesai), [Alexander Jaust](https://github.com/ajaust), and [Benjamin Uekermann](https://github.com/uekerman). [Many students](https://github.com/Simulation-Software-Engineering/Lecture-Material/graphs/contributors) helped improving the content.
 - The Sustainable Development of Simulation Software was originally developed by [Dennis Gläser](https://github.com/dglaeser) and [Bernd Flemisch](https://github.com/berndflemisch).
+- Since then, also Matthias Braun, [Gerasimos Chourdakis](https://github.com/MakisH), and Stefan Meggendorfer have been contributing to the material. 
 
 In several parts of the material, we use content from
 
