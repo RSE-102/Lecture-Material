@@ -18,7 +18,7 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 
 - We typically give the course just before the lecture period in winter term.
 - Next course will be **October 7-11, 2024** with the *reflection day* on **December 10, 2024**. Registration via [Campus](
-https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/wbLv.wbShowLVDetail?$ctx=design=ca2;header=max&pSpracheNr=1&pStpSpNr=403777) or (if you not a student and cannot access) via [mail to Benjamin Uekermann](@mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
+https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/wbLv.wbShowLVDetail?$ctx=design=ca2;header=max&pSpracheNr=1&pStpSpNr=403777) or (if you not a student and cannot access) via mail to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
 - The first course ran from Tuesday, October 4 to Friday October 7, 2022, with the *reflection day* on December 6, 2022.
 - There was no course in 2023. Instead, we organized a week-long summer school on [Research Software Engineering with Julia: Basics, Visualization, and Statistics](https://www.simtech.uni-stuttgart.de/events/simtech-summer-school/SuSch_2/)
 
