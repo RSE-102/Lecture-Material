@@ -17,20 +17,18 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 ## Courses
 
 - We typically give the course just before the lecture period in winter term.
-- Next course will be **October 7-11, 2024** with the *reflection day* on **December 10, 2024**.
+- Next course will be **October 7-11, 2024** with the *reflection day* on **December 10, 2024**. Registration via [Campus](
+https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/wbLv.wbShowLVDetail?$ctx=design=ca2;header=max&pSpracheNr=1&pStpSpNr=403777) or (if you not a student and cannot access) via [mail to Benjamin Uekermann](@mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
 - The first course ran from Tuesday, October 4 to Friday October 7, 2022, with the *reflection day* on December 6, 2022.
 - There was no course in 2023. Instead, we organized a week-long summer school on [Research Software Engineering with Julia: Basics, Visualization, and Statistics](https://www.simtech.uni-stuttgart.de/events/simtech-summer-school/SuSch_2/)
 
 ## Timetable and content
 
-- WIP: We will extend the program to five days in 2024.
+### Day 1: Orga and Git
 
-### Day 1: Git and misc
-
-- 09:00-10:30: Course orga and quick recap of Git basic
-- 11:00-12:30: Git workflows
-- 14:00-15:30: Exercise on Git workflows
-- 16:00-17:30: Misc: technical writing, versioning, licenses, and more
+- 10:30-12:30: Orga and student presentations
+- 14:00-15:30: Recap of Git basic, Git workflows
+- 16:00-17:30: Exercise on Git workflows
 
 ### Day 2: Python packaging and testing
 
@@ -52,6 +50,11 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 - 11:00-12:30: Exercise on clean code
 - 14:00-15:30: Design principles and patterns
 - 16:00-17:30: Exercise on design principles and patterns
+
+### Day 5: Misc and wrap up
+
+- 09:00-10:30: Technical writing, versioning, licenses, and more
+- 11:00-12:30: Finish all your exercises or start applying things on your project
 
 ### Reflection day
 
