@@ -69,6 +69,6 @@ Each participant should prepare a 5-10 minutes presentation. There is enough tim
 
 In several parts of the material, we use content from
 
-> Irving, Hertweck, Johnston, Ostblom, Wickham, and Wilson: [Research Software Engineering with Python](https://merely-useful.tech/py-rse), 2021,
+> Irving, Hertweck, Johnston, Ostblom, Wickham, and Wilson: [Research Software Engineering with Python](https://third-bit.com/py-rse/), 2021,
 
 a book, which we also recommend to recap Git/Bash/Python basics.
