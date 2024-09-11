@@ -26,7 +26,7 @@ https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/wbL
 
 ### Day 1: Orga and Git
 
-- 10:30-12:30: Orga and student presentations
+- 10:00-12:30: Orga and student presentations
 - 14:00-15:30: Recap of Git basic, Git workflows
 - 16:00-17:30: Exercise on Git workflows
 
@@ -58,8 +58,7 @@ https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/wbL
 
 ### Reflection day
 
-How did you apply the newly learned skills in your work? Which problems did you face?
-Each participant should prepare a 5-10 minutes presentation. There is enough time for in-depth discussions.
+- 14:00-18:00: How did you apply the newly learned skills in your work? Which problems did you face? Each participant should prepare a 5-10 minutes presentation. There is enough time for in-depth discussions.
 
 ## Credits
 
