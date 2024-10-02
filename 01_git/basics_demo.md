@@ -22,7 +22,7 @@
     - many more
     - often, more than just hosting, also DevOps
 
-- Give outlook on remainder of Git chapter: *How I work with Git*, advanced topics (workflows, rebase), exercise
+- Give outlook on remainder of Git part: *How I work with Git*, advanced topics (workflows, rebase), exercise
 
 ## How I work with Git
 
@@ -41,11 +41,12 @@ Starting remarks:
     - `git remote -v` (I have upstream, myfork, ...)
     - mention difference between ssh and https (also see GitHub)
     - get newest changes `git pull upstream develop`
+    - or simply `git pull` (`git branch -vv` to see upstream tracking)
     - `git log` -> I use special format, see `~/.gitconfig`,
-    - check log on GitHub; explain short hash
-    - `git branch`
-    - `git branch add-demo-feature`
-    - `git checkout add-demo-feature`
+    - check log on GitHub
+    - explain how hash is computed (complete state + pointer to parent)
+    - explain short hash
+    - `git checkout -b add-demo-feature`
 
 - (3) First commit
     - `git status` -> always tells you what you can do
@@ -53,7 +54,7 @@ Starting remarks:
     - `git diff`, `git diff src/com/Action.hpp`, `git diff --color-words`
     - `git status`, `git add`, `git status`
     - `git commit` -> "Include MagicHeader in Action.hpp"
-    - `git status`, `git log`, `git log -p`, `git show`
+    - `git status`, `git log`, `git show`
 
 - (4) Change or revert things
     - I forgot to add sth: `git reset --soft HEAD~1`, `git status`
@@ -61,16 +62,9 @@ Starting remarks:
     - `git log`
     - `git commit`
     - actually all that is nonsense: `git reset --hard HEAD~1`
-    - modify again, all nonsense before committing: `git checkout src/action/Action.hpp`
 
-- (5) Stash
-    - while working on unfinished feature, I need to change / test this other thing quickly, too lazy for commits / branches
-    - `git stash`
-    - `git stash pop`
-
-- (6) Create PR
+- (5) Create PR
     - create commit again
-    - preview what will be in PR: `git diff develop..add-demo-feature`
     - `git push -u myfork add-demo-feature` -> copy link
     - explain PR template
     - explain target branch
@@ -78,7 +72,7 @@ Starting remarks:
     - cancel
     - my fork -> branches -> delete
 
-- (7) Check out someone else's work
+- (6) Check out someone else's work
     - have a look at an existing PR, look at all tabs, show suggestion feature
     - but sometimes we want to really build and try sth out ...
     - `git remote -v`
@@ -92,9 +86,7 @@ Starting remarks:
 ### Quick things
 
 - [Video: Git in 15 minutes: basics, branching, no remote](https://www.youtube.com/watch?v=USjZcfj8yxE)
-- [The GitHub Blog: Commits are snapshots, not diffs](https://github.blog/2020-12-17-commits-are-snapshots-not-diffs/)
 - Chapters [6](https://third-bit.com/py-rse/git-cmdline.html) and [7](https://third-bit.com/py-rse/git-advanced.html) of Research Software Engineering with Python
-- [Podcast All Things Git: History of VC](https://www.allthingsgit.com/episodes/the_history_of_vc_with_eric_sink.html)
 - [git purr](https://girliemac.com/blog/2017/12/26/git-purr/)
 
 ### References
