@@ -34,6 +34,7 @@ Starting remarks:
 - (1) Look at GitHub
     - [preCICE repository](https://github.com/precice/precice)
     - default branch `develop`
+    - branch protection rule for `main` (`Settings` --> `Branches`)
     - fork -> my fork
 
 - (2) Working directory:
@@ -53,7 +54,7 @@ Starting remarks:
     - `vi src/action/Action.hpp` -> add `#include "MagicHeader.hpp"`
     - `git diff`, `git diff src/com/Action.hpp`, `git diff --color-words`
     - `git status`, `git add`, `git status`
-    - `git commit` -> "Include MagicHeader in Action.hpp"
+    - `git commit` -> "Include MagicHeader in Action.hpp as a demo" (what, not how; include why if possible; imperative mood; no period)
     - `git status`, `git log`, `git show`
 
 - (4) Change or revert things
