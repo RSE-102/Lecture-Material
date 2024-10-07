@@ -46,7 +46,7 @@ slideOptions:
 
 - Python framework specifically designed to run, monitor and automate unit tests.
 - Many features like test automation, sharing of setup and shutdown of tests, etc.
-- Using the base class `unittest.TestCase` to create a test suite.
+- Use the base class `unittest.TestCase` to create a test suite.
 - Command-line interface: `python -m unittest test_module1 test_module2 ...`.
 
 ---
