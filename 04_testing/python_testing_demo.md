@@ -5,7 +5,7 @@ Example code is in [automation-lecture repository](https://github.com/RSE-102/au
 ## Software code used
 
 - The file `operations.py` consists of two functions `find_max` and `find_mean` which calculate the maximum and mean of all elements of a list. The `main()` routine in the file applies the functions to a list and prints the output.
-- Both the functions in `operations.py` have assertion statements to check if the correct data type is received.
+- Both the functions in `operations.py` have assertion statements to check the received data.
 - Assertion statements are the most basic way of testing code and are also used in unit and integration testing as demonstrated here.
 - Tests are written in the file `test_operations.py`. The `test_*` prefix in the name is required so that pytest detects the file as a testing file. Suffix form `*_test.py` also works.
 - In all there are two unit tests, one integration test and one regression test.
