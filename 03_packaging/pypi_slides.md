@@ -31,9 +31,9 @@ slideOptions:
 
 ---
 
-## Python packaging is itself evolving
+## Python packaging standard is continuously evolving
 
-Files which are commonly seen:
+Commonly seen files:
 
 `setup.py`, `setup.cfg`, `pyproject.toml`, `requirements.txt`.
 
@@ -56,15 +56,16 @@ All are files which packaging-related tools consume. What do these files do?
 
 - `disutils`: old and deprecated, to be phased out in Python 3.12.
 - `setuptools`: actively maintained packaging tool which is shipped with Python (built on top of `disutils`).
+- Many more options, but `setuptools` is lowest common denominator.
 
 ---
 
 ## setup.py - setup.cfg - pyproject.toml
 
 - Names of all these files are standardized.
-- `setup.py` is the interface to the command line. Needs to be at the root of the repository.
-- `setup.cfg` has metadata of all the options that can also be specified in `setup.py`.
-- `pyproject.toml` is similar to `setup.cfg` but has additionally the `build-system` table.
+- `setup.py` is a script which uses `setuptools`. Needs to be at the root of the repository.
+- `setup.cfg` is a config file which has metadata of all the options that can also be specified in `setup.py`.
+- `pyproject.toml` has logic and metadata necessary to build and package.
 
 ---
 
@@ -201,7 +202,7 @@ Executing:
 pip install package-name
 ```
 
-leads to pip choosing a distribution file  for the package and installing it in the environment.
+leads to pip choosing a distribution file for the package and installing it in the environment.
 
 ```bash
 python -m pip install package-name
@@ -217,7 +218,7 @@ pip install package-name
 
 ## Using pip 2/2
 
-- pip tracks metadata to allow for easy uninstallation and updating of packages.
+- pip tracks metadata to allow for easy updating and uninstalling of packages.
 - pip is bundled together with Python 3.x, making it even easier to use.
 - pip can install a package from a source distribution (`.tar.gz`) or a wheel distribution (`.whl`).
 
@@ -235,14 +236,12 @@ pip install --user <package>
 
 ---
 
-## Installing a package in editable mode
+## pip vs. pipx
 
-```bash
-pip install -e <package>
-```
-
-- Creates a direct link between local package files and installation, which is useful for development.
-- Make sure to *undo* post development.
+- pip installs packages in the global namespace.
+- pipx installs packages in individual virtual environments.
+- pipx is meant to be used for applications run directly via the command line.
+- For libraries, the recommended way is using pip in a virtual environment.
 
 ---
 
@@ -287,7 +286,7 @@ Four places where naming is relevant:
 - Name of the package as seen my PyPI.
 - Name of the package to be used in the `import` statement.
 
-**All three names are independent of each other.**
+**All names are independent of each other.**
 
 Example folder structure:
 
@@ -494,7 +493,7 @@ td {
 | ------- | ----- | --- |
 | Multi-language dependency | Yes | No |
 | Package installation | Anaconda installer / download binaries | build / wheels |
-| Package availability | ~8000 | ~336,000 |
+| Package availability | ~8000 | ~590,000 |
 | Virtual environment functionality | In-built environment management | No, but support for `virtualenv` |
 
 ---
