@@ -41,7 +41,7 @@ In this exercise you will convert a raw Python code into a packaged code which i
     - The function `create_plot()` creates one plot for a particular time stamp. In the earlier figure output this would be one of the four plots. You will find this functionality inside the time loop in `diffusion2d.py`
     - The function `output_plots()` outputs all the four plots as one figure. You will find this functionality outside of the time loop and at the end of `diffusion2d.py`
 - Port the appropriate parts of the code pertaining to figure creation and figure output from `diffusion2d.py` into these two functions.
-- Take care to pass the appropriate arguments to both these functions. Code refactoring should not affect the functionality, that is, the refactored code should work exactly as the original `diffusion2d.py`.
+- Take care to pass the appropriate arguments to both these functions. Code refactoring should not affect the functionality, which means that the refactored code should work exactly as the original `diffusion2d.py`.
 - Once the functionality is ported, you need to import it into the `diffusion2d.py`. This is done in the following way
 
 ```python
@@ -90,15 +90,10 @@ diffusion2d.solve()
 - Upload the distribution archives using the commands shown in the lecture notes.
 - Go to TestPyPI and view the package which has been uploaded.
 - Take a screenshot of the TestPyPI webpage which displays your package.
-- **Important**: Add the TestPyPI screenshot in the description of the pull request opened for submission.
 
 ## Step 7 - Testing the deployed package
 
 - Using the commands from the lecture notes try to install the package using `pip` and also run the code by importing the `solve()` functionality in a Python script or an interactive Python shell.
-
-## Step 8 - Submitting the exercise
-
-- Open a pull request with the name `Packaged code for PyPI by <your-GitHub-username>` from your fork to the `main` branch of the exercise repository.
 
 ## Optional: Using Versioneer to handle versioning
 
