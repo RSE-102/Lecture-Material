@@ -30,7 +30,7 @@ slideOptions:
 ## Learning goals
 
 - Why is it important to test simulation software?
-- What are the concepts of unit testing, integration testing and regression testing and how to write such tests for a simulation software?
+- What are the concepts of unit testing, integration testing and regression testing and how to write such tests?
 - How to use the Python testing frameworks `pytest` and `unittest` to generate a automated testing workflow?
 
 ---
@@ -48,7 +48,7 @@ slideOptions:
 - Improve software reliability and reproducibility.
 - Make sure that changes (bugfixes, new features) do not affect other parts of software.
 - Generally all software is better off being tested regularly. Possible exceptions are very small codes with single users.
-- Ensure that a distributed version of a software actually works.
+- Ensure that a distributed/packaged software actually works.
 
 ---
 
@@ -143,7 +143,7 @@ assert condition, "message"
     - In the end user ends up with a test alongside the code.
     - Eliminates confirmation bias of the user.
     - Writing tests gives clarity on what the code is supposed to do.
-- Disadvantage: known to not improve productivity.
+- Some arguments out there claim that TDD to not improve productivity.
 
 ---
 
