@@ -39,7 +39,7 @@ Follow the link in the task list above and fork the repository. The repository i
 - Open a merge request in the GitHub Repository ["Containerization Exercise"](https://github.com/RSE-102/containerization-exercise).
     - As title choose "[`USERNAME`] Docker Container Recipe", where `USERNAME` is your GitHub username.
     - Put all required local files under version control.
-    - Assign the merge request to `berndflemisch`.
+    - Tag `@MakisH` if you want a review.
     - Double-check that all files are in the repository and up to date.
     - If everything looks good, create the pull request.
 
