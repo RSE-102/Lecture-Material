@@ -12,7 +12,14 @@ slideOptions:
 ---
 
 <style>
-.reveal section img { background:none; border:none; box-shadow:none; }
+  .reveal section img {
+    background:none;
+    border:none;
+    box-shadow:none;
+  }
+  .reveal p {
+    text-align: left;
+  }
 </style>
 
 # Containers
@@ -56,7 +63,7 @@ slideOptions:
 
 - Plenty of different container formats
 
-  * [lxc/lxd](https://linuxcontainers.org/), [Docker](https://www.docker.com/), [Singularity](https://sylabs.io/), [podman](https://podman.io/), [Sarus](https://user.cscs.ch/tools/containers/sarus/)...
+  * [lxc/lxd](https://linuxcontainers.org/), [Docker](https://www.docker.com/), [Apptainer](https://apptainer.org/), [podman](https://podman.io/), [Sarus](https://user.cscs.ch/tools/containers/sarus/)...
 
 - Different solutions with different strengths due to different use cases
 
@@ -110,7 +117,7 @@ slideOptions:
 
 - [Docker](https://www.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
-- [Singularity](https://sylabs.io/)
+- [Apptainer](https://apptainer.org/)
 - [Sarus](https://user.cscs.ch/tools/containers/sarus/)
 - [lxc/lxd](https://linuxcontainers.org/)
 - [podman](https://podman.io/)
