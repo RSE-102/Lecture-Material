@@ -54,7 +54,7 @@ All are files which packaging-related tools consume. What do these files do?
 
 ## Python libraries used to install packages
 
-- `disutils`: old and deprecated, to be phased out in Python 3.12.
+- `disutils`: old and deprecated ([PEP 632](https://peps.python.org/pep-0632/)).
 - `setuptools`: actively maintained packaging tool which is shipped with Python (built on top of `disutils`).
 - Many more options, but `setuptools` is lowest common denominator.
 
@@ -226,7 +226,7 @@ pip install package-name
 sudo pip install <package>
 ```
 
-Various security issues with doing so! Go for
+Various security issues with doing so! Go for a venv or
 
 ```bash
 pip install --user <package>
@@ -263,7 +263,7 @@ pip install --upgrade <package>
 
 - [PyPI](https://pypi.org/) = **Python Package Index** is a repository of software developed in the Python community.
 - PyPI itself is developed on GitHub through another software called [Warehouse](https://github.com/pypa/warehouse).
-- PyPI has a informative [public dashboard](https://p.datadoghq.com/sb/7dc8b3250-85dcf667bd) to show its activity.
+- PyPI has an informative [public dashboard](https://p.datadoghq.com/sb/7dc8b3250-85dcf667bd) to show its activity.
 - A major advantage is the active maintenance of PyPI and the packages indexed in it.
 - Not to be confused with **PyPA** which is Python Packaging Authority, a working group which maintains projects in Python packaging.
 
@@ -281,7 +281,7 @@ Four places where naming is relevant:
 
 - Name of the repository (on GitHub or GitLab).
 - Name of the folder which has the source code.
-- Name of the package as seen my PyPI.
+- Name of the package as seen by PyPI.
 - Name of the package to be used in the `import` statement.
 
 **All names are independent of each other.**
@@ -295,7 +295,7 @@ generic_folder_name/
      └── source-code.py
 ```
 
-- The file `__init__.py` is required to import the `package_name/` package as a package. This file is mostly empty
+- The file `__init__.py` is required to import the `package_name/` as a package. This file is mostly empty
 - `source-code.py` contains the code. It can be multiple files.
 
 ---
