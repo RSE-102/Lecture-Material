@@ -12,7 +12,14 @@ slideOptions:
 ---
 
 <style>
-.reveal section img { background:none; border:none; box-shadow:none; }
+  .reveal section img {
+    background:none;
+    border:none;
+    box-shadow:none;
+  }
+  .reveal p {
+    text-align: left;
+  }
 </style>
 
 # Containerization with Docker
@@ -64,15 +71,15 @@ slideOptions:
 
 - Portable format for sharing applications.
 
-- Avoid tedious installation procedures by providing Docker container ([FEniCS](https://fenicsproject.org/download/), [GitLab](https://docs.gitlab.com/ee/install/docker.html)...).
+- Avoid tedious installation procedures by providing Docker containers ([FEniCS](https://fenicsproject.org/download/), [GitLab](https://docs.gitlab.com/ee/install/docker.html)...).
 
 ---
 
 ## Docker Architecture
 
-<img src="https://docs.docker.com/engine/images/architecture.svg" width=80%; style="margin-left:auto; margin-right:auto; padding-top: 25px; padding-bottom: 25px">
+<img src="https://docs.docker.com/get-started/images/docker-architecture.webp" width=80%; style="margin-left:auto; margin-right:auto; padding-top: 0px; padding-bottom: 10px">
 
-[https://docs.docker.com/engine/images/architecture.svg](https://docs.docker.com/engine/images/architecture.svg)
+[https://docs.docker.com/get-started/images/docker-architecture.webp](https://docs.docker.com/get-started/images/docker-architecture.webp)
 
 ---
 
@@ -174,7 +181,7 @@ slideOptions:
 
 ## Demo: Running prebuilt images
 
-<!--Details available in [`docker_demo.md`](https://github.com/Simulation-Software-Engineering/Lecture-Material/blob/main/02_virtualization_and_containers/docker_demo.md)-->
+<!--Details available in [`docker_demo.md`](https://github.com/RSE-102/Lecture-Material/blob/main/05_containerization/docker_demo.md)-->
 
 ---
 
@@ -183,19 +190,14 @@ slideOptions:
 - Define container in `Dockerfile`
 
     * Git-friendly text file.
-
 - Start from base image
 
     * Find images on repository such as [DockerHub](https://hub.docker.com/).
-
 - Extend image by additional layers
 
     * Layers are added separately -> Keep number of layers low.
-
     * Layers are cached.
-
     * Changed layer requires downstream layers to be recreated.
-
 - Container (layers) have commit hashes.
 
 ---
