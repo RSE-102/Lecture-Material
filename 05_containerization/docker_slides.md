@@ -1,6 +1,6 @@
 ---
 title: Containerization with Docker
-author: Alexander Jaust, Bernd Flemisch
+author: Alexander Jaust, Bernd Flemisch, Gerasimos Chourdakis
 institute: University of Stuttgart
 type: slide
 slideOptions:
@@ -8,25 +8,30 @@ slideOptions:
   width: 1400
   height: 900
   margin: 0.1
-  theme: solarized
 ---
 
 <style>
-  .reveal section img {
-    background:none;
-    border:none;
-    box-shadow:none;
-  }
-  .reveal p {
-    text-align: left;
-  }
+    .reveal strong {
+      font-weight: bold;
+      color: orange;
+    }
+    .reveal p {
+      text-align: left;
+    }
+    .reveal section h1 {
+      color: orange;
+    }
+    .reveal section h2 {
+      color: orange;
+    }
 </style>
+
 
 # Containerization with Docker
 
 <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" width=40%; style="margin-left:auto; margin-right:auto; padding-top: 25px; padding-bottom: 25px">
 
-[https://www.docker.com/company/newsroom/media-resources](https://www.docker.com/company/newsroom/media-resources)
+<small>[https://www.docker.com/company/newsroom/media-resources](https://www.docker.com/company/newsroom/media-resources)</small>
 
 
 ---
@@ -135,17 +140,8 @@ slideOptions:
 
     * Prefix commands with `sudo`.
     * Be member of group `docker` (=makes you root), expected by some applications (e.g. `act`).
-    * [Attack surface?!](https://docs.docker.com/engine/security/##docker-daemon-attack-surface)
-
-        + [Isolate user namespace](https://docs.docker.com/engine/security/userns-remap/).
-        + Use trustworthy containers.
-
-- Alternatives:
-
-    * [Rootless mode](https://docs.docker.com/engine/security/rootless/).
-    * Run Docker in a VM.
-
-- Check [security notes](https://docs.docker.com/engine/security/).
+    * Check [security notes](https://docs.docker.com/engine/security/).
+    * Alternative: [Rootless mode](https://docs.docker.com/engine/security/rootless/).
 
 ---
 
@@ -206,7 +202,7 @@ slideOptions:
 
 - `FROM`: Defines base image.
 
-- `RUN`: Defines commands to execute.
+- `RUN`: Defines commands to execute during `build`.
 
 - `WORKDIR`: Defines working directory for following commands.
 
@@ -225,12 +221,12 @@ slideOptions:
 ## Dockerfile Simple Example
 
 ```Dockerfile
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 RUN apt update -y && apt install -y neofetch
 WORKDIR /app
 COPY testfile .
-CMD ["echo", "hello"]
+CMD ["neofetch"]
 ```
 
 ---
