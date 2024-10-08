@@ -163,8 +163,6 @@ dependencies = [
 dynamic = ["<version-number>"]
 ```
 
-A nominal `setup.py` is still required.
-
 ---
 
 ## Packaging tool `build`

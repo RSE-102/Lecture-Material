@@ -41,7 +41,7 @@ slideOptions:
 - Packaging is a workflow to convert a code into a standardized distributable software.
 - A code can be standardized in various ways. Some examples are
     - creating a compact form by following a standardization.
-    - providing an installation recipe, for example, using CMake / make (`make install`).
+    - providing an installation recipe, for example, using CMake / make.
     - bundling code into an app or software with some UI.
 - We discuss **creating a compact form by following a standardization**.
 
