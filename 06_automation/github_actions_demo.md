@@ -26,7 +26,7 @@
         - uses: actions/checkout@v2
         - uses: actions/setup-python@v2
           with:
-            python-version: '3.12.7'
+            python-version: '3.8.10'
         - name: "Run unittest"
           run: python -m unittest
   ```
