@@ -69,7 +69,7 @@ From: [https://docs.github.com/en/actions](https://docs.github.com/en/actions)
 
 ## Components (2/2)
 
-<img src="https://docs.github.com/assets/cb-25628/images/help/images/overview-actions-simple.png" width=95%; style="margin-left:auto; margin-right:auto; padding-top: 25px; padding-bottom: 25px; background: #eeeeee">
+<img src="https://docs.github.com/assets/cb-25535/mw-1440/images/help/actions/overview-actions-simple.webp" width=95%; style="margin-left:auto; margin-right:auto; padding-top: 25px; padding-bottom: 25px; background: #eeeeee">
 
 
 From [GitHub Actions tutorial](https://docs.github.com/en/actions)
@@ -198,7 +198,7 @@ steps:
 
   ```yaml
   - name: "Upload artifact"
-    uses: actions/upload-artifact@v2
+    uses: actions/upload-artifact@v4
     with:
       name: my-artifact
       path: my_file.txt
