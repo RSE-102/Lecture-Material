@@ -31,7 +31,7 @@ slideOptions:
 
 - Why is it important to test simulation software?
 - What are the concepts of unit testing, integration testing and regression testing and how to write such tests?
-- How to use the Python testing frameworks `pytest` and `unittest` to generate a automated testing workflow?
+- How to use the Python testing frameworks `pytest` and `unittest` to generate an automated testing workflow?
 
 ---
 
