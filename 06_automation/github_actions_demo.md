@@ -33,7 +33,7 @@
 
 - `runs-on` does **not** refer to a Docker container, but to a runner tag.
 - This specific Python version as it is the current version on my laptop (and let's say I want to reproduce this environment)
-- add, commit, push
+- Add, commit, push
 - After the push, inspect "Action" panel on GitHub repository
     - GitHub will schedule a run (yellow dot)
     - Hooray. We have set up our first action.
@@ -48,6 +48,16 @@
     - Edit `operations.py`, break the code, commit it and push it to the branch. Afterwards open a new PR and inspect the failing test. We are also not able to merge the changes as the "Merge" button should be inactive.
 
 ## 2. Extend Action to Have Several Dependent Jobs
+
+- Briefly explain what `black` is: a compact, easy-to-use formatting tool.
+    - Run `black` locally on repository and explain what it does.
+
+      ```bash
+      black --check .
+      ```
+
+    - Add an empty line somewhere and run again.
+    - Run without `--check` and `git status`.
 
 - Adding additional jobs by editing on GitHub. The workflow should have the following content:
 
@@ -100,7 +110,7 @@
   - Show `Actions` tab
     - `Build and test` job, click on a run
     - Jobs created through test matrix
-    - Click on a job, click on a few steps 
+    - Click on a job, click on a few steps
   - Show `workflows` folder, click on `Build and Test`
   - Only one job. `build`, `test`, ... are modeled as steps
 - If time allows, quickly show DuMuX CI (and explain that GitLab CI works differently)

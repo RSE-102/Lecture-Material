@@ -109,8 +109,8 @@ jobs:
 
 - Integrated via `uses` directive
 - Additional configuration via `with` (options depend on Action)
-- Find action in [marketplace](https://github.com/marketplace?type=actions)
-- Write [own action](https://docs.github.com/en/actions/creating-actions)
+- Find actions in [marketplace](https://github.com/marketplace?type=actions)
+- Write [own actions](https://docs.github.com/en/actions/creating-actions)
 
 ---
 
@@ -244,16 +244,16 @@ steps:
     2. Build application
     3. Test application
 
-- Reuse code of Python testing lecture
+- Reusing code of Python testing lecture
 
 ---
 
 ## Advanced Topics
 
 - [Self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)
-- [Secrets and tokes](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+- [Secrets and tokens](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 - [Continuous deployment](https://docs.github.com/en/actions/deployment/about-deployments/about-continuous-deployment)
-- [Custom Actions](https://docs.github.com/en/actions/creating-actions/about-custom-actions)
+- [Custom actions](https://docs.github.com/en/actions/creating-actions/about-custom-actions)
 - [Build matrices](https://docs.github.com/en/actions/using-workflows/advanced-workflow-features#using-a-build-matrix)
 - Using own Docker containers
 

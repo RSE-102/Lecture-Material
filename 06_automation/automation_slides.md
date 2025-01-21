@@ -32,16 +32,18 @@ slideOptions:
   }
 </style>
 
-# Workflow automation
+# Workflow Automation
 
 ---
 
 ## Learning Goals
 
-- What are continuous methodologies
-- Why to automate common workflows
-- What are common workflows to automate
-- How to automate common workflows with GitHub Actions
+- Name and explain common workflows to automate in RSE.
+- Explain the differences between the various continuous methodologies.
+- Explain why automation is crucial in RSE.
+- Write basic automation scripts for GitHub Actions.
+- Read basic automation scripts for GitLab CI/CD.
+- Name and roughly explain the necessary steps to host GitLab Runners yourself.
 
 ---
 
@@ -49,16 +51,16 @@ slideOptions:
 
 - Automatize tasks
     - Run tests frequently, give feedback early etc.
+    - Ensure reproducible test environments
     - Cannot forget automatized tasks
     - Less burden to developer (and their workstation)
-    - Running predefined workflows/pipelines is simple
-    - Ensure reproducible test environments
+    - Avoid manual errors
 - Process often integrated in development workflow
     - Example: Support by Git hooks or Git forges
 
 ---
 
-## Typical Tasks
+## Typical Automation Tasks in RSE
 
 - Check code formatting and quality
 - Compile and test code for different platforms
@@ -66,13 +68,14 @@ slideOptions:
     - Big tests, nightly builds...
 - Build documentation and deploy it
 - Generate coverage reports and visualization
+- Build, package, and upload releases
 
 ---
 
 ## Continuous Methodologies (1/2)
 
 - **Continuous Integration** (CI)
-    - Continuously integrate changes into "main" branch.
+    - Continuously integrate changes into "main" branch
     - Avoids "merge hell"
     - Relies on testing and checking code continuously
         - Should be automatized
