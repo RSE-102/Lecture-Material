@@ -17,7 +17,7 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 ## Courses
 
 - We typically give the course just before the lecture period in winter term or in the break between winter and summer term.
-- Next course will be **March 23-17, 2026** with the *reflection day* on **TBD**. Registration via Campus (link will follow) or (if you not a student and cannot access) via mail to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
+- Next course will be **March 23-27, 2026** with the *reflection day* on **TBD**. Registration via Campus (link will follow) or (if you not a student and cannot access) via mail to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
 - The first course ran from Tuesday, October 4 to Friday, October 7, 2022, with the *reflection day* on December 6, 2022.
 - There was no course in 2023. Instead, we organized a week-long summer school on [Research Software Engineering with Julia: Basics, Visualization, and Statistics](https://www.simtech.uni-stuttgart.de/events/simtech-summer-school/SuSch_2/)
 - The second course ran from Monday, October 7 to Friday, October 11, 2024 with the *reflection day* on December 10, 2024.
