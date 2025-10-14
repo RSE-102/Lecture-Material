@@ -16,13 +16,15 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 
 ## Courses
 
-- We typically give the course just before the lecture period in winter term.
-- Next course will be **October 7-11, 2024** with the *reflection day* on **December 10, 2024**. Registration via [Campus](
-https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/wbLv.wbShowLVDetail?$ctx=design=ca2;header=max&pSpracheNr=1&pStpSpNr=403777) or (if you not a student and cannot access) via mail to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
-- The first course ran from Tuesday, October 4 to Friday October 7, 2022, with the *reflection day* on December 6, 2022.
+- We typically give the course just before the lecture period in winter term or in the break between winter and summer term.
+- Next course will be **March 23-17, 2026** with the *reflection day* on **TBD**. Registration via Campus (link will follow) or (if you not a student and cannot access) via mail to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
+- The first course ran from Tuesday, October 4 to Friday, October 7, 2022, with the *reflection day* on December 6, 2022.
 - There was no course in 2023. Instead, we organized a week-long summer school on [Research Software Engineering with Julia: Basics, Visualization, and Statistics](https://www.simtech.uni-stuttgart.de/events/simtech-summer-school/SuSch_2/)
+- The second course ran from Monday, October 7 to Friday, October 11, 2024 with the *reflection day* on December 10, 2024.
 
 ## Timetable and content
+
+*might undergo updates for 2026*
 
 ### Day 1: Orga and Git
 
@@ -64,7 +66,7 @@ https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/wbL
 
 - The Simulation Software Engineering lecture was originally developed by [Ishaan Desai](https://github.com/IshaanDesai), [Alexander Jaust](https://github.com/ajaust), and [Benjamin Uekermann](https://github.com/uekerman). [Many students](https://github.com/Simulation-Software-Engineering/Lecture-Material/graphs/contributors) helped improving the content.
 - The Sustainable Development of Simulation Software was originally developed by [Dennis Gläser](https://github.com/dglaeser) and [Bernd Flemisch](https://github.com/berndflemisch).
-- Since then, also Matthias Braun, [Gerasimos Chourdakis](https://github.com/MakisH), and Stefan Meggendorfer have been contributing to the material. 
+- Since then, also Matthias Braun, [Gerasimos Chourdakis](https://github.com/MakisH), Stefan Meggendorfer, [Timo Koch](https://github.com/timokoch), and Jean-Noël Grad have been contributing to the material. 
 
 In several parts of the material, we use content from
 
