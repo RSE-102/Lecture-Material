@@ -14,17 +14,13 @@ This is course material for a one-week graduate school block course, which is re
 
 Skills in these areas are crucial for developing or contributing to quality-assured software in collaborative environments and are very useful in today’s research landscape.
 
-## Courses
+## Next course
 
-- We typically give the course just before the lecture period in winter term or in the break between winter and summer term.
-- Next course will be **March 23-27, 2026** with the *reflection day* on **TBD**. Registration via Campus (link will follow) or (if you not a student and cannot access) via mail to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
-- The first course ran from Tuesday, October 4 to Friday, October 7, 2022, with the *reflection day* on December 6, 2022.
-- There was no course in 2023. Instead, we organized a week-long summer school on [Research Software Engineering with Julia: Basics, Visualization, and Statistics](https://www.simtech.uni-stuttgart.de/events/simtech-summer-school/SuSch_2/)
-- The second course ran from Monday, October 7 to Friday, October 11, 2024 with the *reflection day* on December 10, 2024.
+**March 23-27, 2026** at the University of Stuttgart in [U32.225](https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7438&$ctx=design=ca2;lang=;profile=) with the *reflection day* on **TBD**. Registration via [Campus](https://campus.uni-stuttgart.de/cusonline/wbLv.wbShowLVDetail?pStpSpNr=420424) or (if you are not a student and cannot access) via mail to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
 
 ## Timetable and content
 
-*might undergo updates for 2026*
+*still might undergo slight updates for 2026*
 
 ### Day 1: Orga and Git
 
@@ -60,7 +56,13 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 
 ### Reflection day
 
-- 14:00-18:00: How did you apply the newly learned skills in your work? Which problems did you face? Each participant should prepare a 5-10 minutes presentation. There is enough time for in-depth discussions.
+- 13:00-17:00: How did you apply the newly learned skills in your work? Which problems did you face? Each participant should prepare a 5-10 minutes presentation. There is enough time for in-depth discussions.
+
+## History
+
+- The first course ran from Tuesday, October 4 to Friday, October 7, 2022, with the *reflection day* on December 6, 2022.
+- There was no course in 2023. Instead, we organized a week-long summer school on [Research Software Engineering with Julia: Basics, Visualization, and Statistics](https://www.simtech.uni-stuttgart.de/events/simtech-summer-school/SuSch_2/)
+- The second course ran from Monday, October 7 to Friday, October 11, 2024 with the *reflection day* on December 10, 2024.
 
 ## Credits
 
