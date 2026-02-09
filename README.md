@@ -16,7 +16,7 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 
 ## Next course
 
-**March 23-27, 2026** at the University of Stuttgart in [U32.225](https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7438&$ctx=design=ca2;lang=;profile=) with the *reflection day* on **May 6, 2026**. Registration via [Campus](https://campus.uni-stuttgart.de/cusonline/wbLv.wbShowLVDetail?pStpSpNr=420424) or (if you are not a student and cannot access) via mail to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
+**March 23-27, 2026** at the University of Stuttgart in [U32.225](https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7438&$ctx=design=ca2;lang=;profile=) with the *reflection day* on **May 6, 2026** (different room then, ground floor SimTech building). Registration via [Campus](https://campus.uni-stuttgart.de/cusonline/wbLv.wbShowLVDetail?pStpSpNr=420424) or (if you are not a student and cannot access) via mail to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
 
 ## Timetable and content
 
