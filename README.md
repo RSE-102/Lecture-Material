@@ -20,8 +20,6 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 
 ## Timetable and content
 
-*still might undergo slight updates for 2026*
-
 ### Day 1: Orga and Git
 
 - 10:00-12:30: Orga and student presentations
