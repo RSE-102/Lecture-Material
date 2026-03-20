@@ -248,7 +248,7 @@ Use `twine` because ...
 
 ## pip 1/3
 
-- pip is a package installer to install packages from the Python package index [PyPI]((https://pypi.org/)).
+- pip is a package installer to install packages from the Python package index [PyPI](https://pypi.org/).
 - pip is itself a [package](https://pypi.org/project/pip/) which is available on PyPI.
 - pip is open-source and is developed on [GitHub](https://github.com/pypa/pip).
 

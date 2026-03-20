@@ -26,7 +26,6 @@ In this exercise you, will convert a simple simulation code written in Python in
 
 - Fork the [exercise repository](https://github.com/RSE-102/diffusion2D).
 - Open the file `diffusion2d.py` and go through the file and try to understand it.
-- Check if your system has Python version >= 3.6 and update it if it is older than 3.6.
 - Install pip, build, and twine.
 - Install NumPy and Matplotlib with `pip`. The installation instructions can be found on the webpages (links in the Prerequisites section of this document).
 - Run the code by running `python diffusion2d.py` and observe the output. You should see four plots combined into one figure. Save this figure on your system.
