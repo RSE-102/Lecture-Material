@@ -31,10 +31,6 @@ slideOptions:
 
 - Explain why software is packaged.
 - Create a distributable package of a Python code, publish on PyPI, and install with pip.
-- Understand the difference between static and dynamic libraries and common ways of installation on Linux.
-- Build C++ software and handle dependencies with Make and CMake.
-- Package C++ software with CPack and create Debian packages.
-- Create Spack packages, e.g., for high-performance computing systems with restricted access rights.
 
 ---
 
