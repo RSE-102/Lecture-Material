@@ -42,11 +42,11 @@ slideOptions:
 
 ## Lecturers
 
-- Matthias Braun (unfortunately sick)
 - Gerasimos Chourdakis
 - Ishaan Desai
 - Bernd Flemisch
-- Stefan Meggendorfer
+- Jean-Noël Grad
+- Timo Koch
 - Benjamin Uekermann
 
 - Important previous contributions to material
@@ -59,10 +59,11 @@ slideOptions:
 
 ## Timetable Today
 
-- 10:30-12:30: Your presentations
+- 10:00-12:00: Your presentations
   - 5 mins each
   - What software are you developing? What tools do you use? What should we touch this week?
-- 14:00-15:30: Git: recap of basic, merge vs. rebase, workflows
+- 12:00-12:30: Git: recap of basics
+- 14:00-15:30: Git: merge vs. rebase, workflows
 - 16:00-17:30: Exercise on Git workflows
 
 ---
@@ -91,7 +92,6 @@ Timetable:
 
 Potential misc topics:
 
-- Technical writing
 - Versioning
 - Licenses
 - What are you interested in?
@@ -100,14 +100,14 @@ Potential misc topics:
 
 ## Breaks
 
-- Lunch: not covered, nor organized, but we have reserved tables at mensa
+- Lunch: not covered, nor organized
 - Coffee: covered, funded by SimTech
 
 ---
 
 ## Reflection Day
 
-- Dec 10, 2024, 14:00-18:00
+- May 6, 2026, 13:00-17:00
 - Part of the course :)
 - How did you apply the newly learned skills in your work? Which problems did you face?
 - 5-10 mins presentations
