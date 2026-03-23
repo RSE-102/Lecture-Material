@@ -19,6 +19,7 @@
     - [GitLab](https://about.gitlab.com/), open-source, hosted e.g. at [IPVS](https://gitlab-sim.informatik.uni-stuttgart.de)
     - [Bitbucket](https://bitbucket.org/product/)
     - [SourceForge](https://sourceforge.net/)
+    - Non-profit alternative: [Codeberg](https://codeberg.org/)
     - many more
     - often, more than just hosting, also DevOps
 
@@ -29,7 +30,7 @@
 Starting remarks:
 
 - There is not *the one solution* how to do things with Git. I simply show what I typically use.
-- Don't use a client if you don't understand the command line `git`
+- Don't use a client if you don't understand the command line `git`, meaning you don't have a mental model of Git yet.
 
 - (1) Look at GitHub
     - [preCICE repository](https://github.com/precice/precice)
@@ -38,7 +39,7 @@ Starting remarks:
     - fork -> my fork
 
 - (2) Working directory:
-    - ZSH shell shows git branches
+    - ZSH shell shows git branches. There are [similar solutions for Bash](https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt) as well.
     - `git remote -v` (I have upstream, myfork, ...)
     - mention difference between ssh and https (also see GitHub)
     - get newest changes `git pull upstream develop`
@@ -57,7 +58,7 @@ Starting remarks:
     - `git commit` -> "Include MagicHeader in Action.hpp as a demo" (what, not how; include why if possible; imperative mood; no period)
     - `git status`, `git log`, `git show`
 
-- (4) Change or revert things
+- (4) Change or reset things
     - I forgot to add sth: `git reset --soft HEAD~1`, `git status`
     - `git diff`, `git diff HEAD` because already staged
     - `git log`
@@ -81,6 +82,10 @@ Starting remarks:
     - `git fetch alex`
     - `git checkout -t alex/[branch-name]`
     - I could now also push to `ajaust`'s remote
+
+- (7) GitHub CLI
+    - `git push -u ...` and `git pull -t ...` maybe hard to remember at first.
+    - Things get easier with the [GitHub CLI](https://cli.github.com/), but bound to GitHub, obviously.
 
 ## Further reading
 
