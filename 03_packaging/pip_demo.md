@@ -21,7 +21,7 @@ or
 apt install python3-pip
 ```
 
-- If installed with Python, the Python version is used to determine which `pip` is installed. So Python 3.8 will install a `pip` by the name of `pip3.8` which will be compatible with Python 3.8.
+- If installed with Python, the Python version is used to determine which `pip` is installed. So Python 3.10 will install a `pip` by the name of `pip3.10` which will be compatible with Python 3.10.
 - In general `pip3` works with Python v3.x.
 - **Note**: Different `pip` names (`pip3`) are not to be confused with the version of the `pip` package, which can be seen with `pip --version`.
 - **Note**: If `python3` is available, but `python` is not, you can install the package `python-is-python3`.
@@ -48,7 +48,6 @@ pip uninstall nutils
 ```
 
 - By default `pip` tries to install packages in the system directory, for example `/usr/local/lib/python<version>`. This is problematic as it has no user isolation and it requires root privileges.
-- With the `--user` flag, packages are installed in the `home` directory, typically at `/home/user/.local/lib/python<version>/site-packages/`. This is important when one is not working with virtual environments.
 
 Installing a package from a folder
 

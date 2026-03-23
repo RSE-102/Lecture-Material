@@ -366,7 +366,7 @@ pipx list
 
 ---
 
-## Example of PyPI package: [fenicsprecice](https://pypi.org/project/fenicsprecice/)
+## Example of PyPI package: [fenicsxprecice](https://pypi.org/project/fenicsxprecice/)
 
 ---
 
