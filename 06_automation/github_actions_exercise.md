@@ -4,10 +4,9 @@ In this exercise, we create automated workflows and pipelines based on GitHub Ac
 
 ## Preparations
 
-- Create a new repository named "rse102-github-actions-exercise" in your own account/namespace on GitHub (with an empty README file) and clone the repository afterwards.
-  - **Note**: We cannot work with forks here because GitHub Actions may not work in pull requests without explicit approval of the owner of the target repository. It is also easier to add badges (see below) to the `README.md` if the repository is under your control.
-- Add the contents of the [automation exercise repository](https://github.com/RSE-102/automation-exercise) to your own repository. You can do this by copying the files into your own repository, adding, and committing them to Git. Afterwards push the changes to GitHub and verify that your repository contains the same files as the `automation-exercise` repository.
-  - **Note**: If you use another way of adding the data to your repository, e.g., by defining a new remote, make sure that the `origin` remote points to your own repository.
+Import (not fork) the [automation exercise repository](https://github.com/RSE-102/automation-exercise) into your own account/namespace on GitHub.
+
+**Note**: We cannot work with forks here because GitHub Actions may not work in pull requests without explicit approval of the owner of the target repository. It is also easier to add badges (see below) to the `README.md` if the repository is under your control.
 
 ## Task descriptions
 
