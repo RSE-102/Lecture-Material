@@ -11,8 +11,8 @@
   vi testing.yml
   ```
 
-- In the first go, we only want to run the `unittest` tests.
-- Edit `testing.yml` to have following content
+- In the first go, we only want to run the `pytest` tests.
+- Edit `testing.yml` to have the following content
 
   ```yaml
   name: Testing workflow
@@ -27,8 +27,10 @@
         - uses: actions/setup-python@v6
           with:
             python-version: '3.10'
-        - name: "Run unittest"
-          run: python -m unittest
+        - name: "Run pytest"
+          run: |
+            python -m pip install pytest
+            python -m pytest
   ```
 
 - `runs-on` does **not** refer to a Docker container, but to a runner tag.
@@ -94,8 +96,10 @@
         - uses: actions/setup-python@v6
           with:
             python-version: '3.10'
-        - name: "Run unittest"
-          run: python -m unittest
+        - name: "Run pytest"
+          run: |
+            python -m pip install pytest
+            python -m pytest
   ```
 
 - We need to run `actions/checkout` in each job
