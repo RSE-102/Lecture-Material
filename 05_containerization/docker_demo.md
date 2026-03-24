@@ -1,4 +1,4 @@
-## Demo: Run existing container
+# Docker Demo
 
 - Show containers on [DockerHub](https://hub.docker.com/)
 
@@ -23,8 +23,8 @@
 - We can make sure that the container is removed after exiting by the `--rm` options, i.e., `docker run --rm -i -t ubuntu /bin/bash`
 
 - When container is running, we see it when calling `docker ps`
-- Start container (with name `tutoral`) `docker run --rm -i -t --name tutorial ubuntu    /bin/bash`
-- Leave it `CTRL-P` + `CTRL-Q` (do not let go of `CTRL` while doing this)
+- Start container (with name `tutorial`) `docker run --rm -i -t --name tutorial ubuntu    /bin/bash`
+- Leave it `CTRL-P-Q` (all keys pressed at the same time)
 - Show container running `docker ps`
 - Reattach to container `docker container attach tutorial`
 - After quitting again, show `docker ps -a`
