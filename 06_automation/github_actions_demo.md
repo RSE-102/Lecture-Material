@@ -138,3 +138,36 @@
   ```bash
   act -j test
   ```
+
+## 5. GitLab CI
+
+In GitLab CI, the same workflow (pipeline) would look as follows, in a `.gitlab-ci.yml` file:
+
+```yaml
+stages:
+  - style
+  - build
+  - test
+
+# Image on which to run the pipeline
+image: ajaust/automation-lecture
+
+check_style:
+  stage: style
+  script:
+    - pip install black
+    - black --check .
+
+build_code:
+  stage: build
+  variables:
+    PROJECT_NAME: "Automation Lecture"
+  script:
+    - echo "Building project $PROJECT_NAME"
+
+test_code:
+  stage: test
+  script:
+    - python -m pip install pytest
+    - python -m pytest
+```
