@@ -99,10 +99,35 @@ slideOptions:
 
 - [GitHub Actions](https://github.com/features/actions)
 - [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
+- [Jenkins](https://www.jenkins.io/)
+- [Woodpecker CI](https://woodpecker-ci.org/)
+  (e.g., in [Codeberg](https://docs.codeberg.org/ci/))
 - [Circle CI](https://circleci.com/)
 - [Travis CI](https://www.travis-ci.com/)
-- [Jenkins](https://www.jenkins.io/)
 - ...
+
+---
+
+## Other ways to automate: Make
+
+```make
+# Excerpt of a Makefile to build and archive a LaTeX document
+DOCUMENT = main
+JOBNAME  = my-publication
+FLAGS    = -pdf -output-directory=./build/ -jobname=${JOBNAME}
+DATETIME = $(shell date +"%Y-%m-%d_%H-%M-%S")
+
+.PHONY:all archive
+
+all:
+	latexmk ${FLAGS} ${DOCUMENT}.tex
+
+archive:
+	mkdir -p archive/
+	cp build/${JOBNAME}.pdf archive/${JOBNAME}_${DATETIME}.pdf
+```
+
+See also [Snakemake](https://snakemake.github.io/): "A framework for reproducible data analysis"
 
 ---
 

@@ -78,7 +78,7 @@ From [GitHub Actions tutorial](https://docs.github.com/en/actions)
 
 ## Setting up a Workflow
 
-- Workflow file files stored `${REPO_ROOT}/.github/workflows`
+- Workflow files stored in `${REPO_ROOT}/.github/workflows`
 - Configured via YAML file
 
 ```yaml
@@ -203,13 +203,14 @@ steps:
       name: my-artifact
       path: my_file.txt
       retention-days: 5
+      include-hidden-files: true # Necessary if upload contains hidden file.
   ```
 
 - Downloading artifact
 
   ```yaml
   - name: "Download a single artifact"
-    uses: actions/download-artifact@v2
+    uses: actions/download-artifact@v4
     with:
       name: my-artifact
   ```
@@ -263,3 +264,4 @@ steps:
 
 - [GitHub Actions documentation](https://docs.github.com/en/actions)
 - [GitHub Actions quickstart](https://docs.github.com/en/actions/quickstart)
+- [Multi-project CI/CD](https://multiprojectdevops.github.io/tutorials/)

@@ -11,8 +11,8 @@
   vi testing.yml
   ```
 
-- In the first go, we only want to run the `unittest` tests.
-- Edit `testing.yml` to have following content
+- In the first go, we only want to run the `pytest` tests.
+- Edit `testing.yml` to have the following content
 
   ```yaml
   name: Testing workflow
@@ -23,12 +23,14 @@
     test:
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-python@v2
+        - uses: actions/checkout@v6
+        - uses: actions/setup-python@v6
           with:
-            python-version: '3.8.10'
-        - name: "Run unittest"
-          run: python -m unittest
+            python-version: '3.10'
+        - name: "Run pytest"
+          run: |
+            python -m pip install pytest
+            python -m pytest
   ```
 
 - `runs-on` does **not** refer to a Docker container, but to a runner tag.
@@ -70,10 +72,10 @@
     style:
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-python@v2
+        - uses: actions/checkout@v6
+        - uses: actions/setup-python@v6
           with:
-            python-version: '3.8.10'
+            python-version: '3.10'
         - name: "Install style checker"
           run: pip install black
         - name: "Run style check"
@@ -87,33 +89,34 @@
         - name: "Run build phase"
           run: echo "Building project $PROJECT_NAME"
     test:
-      needs: build
+      # needs: build
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-python@v2
+        - uses: actions/checkout@v6
+        - uses: actions/setup-python@v6
           with:
-            python-version: '3.8.10'
-        - name: "Run unittest"
-          run: python -m unittest
+            python-version: '3.10'
+        - name: "Run pytest"
+          run: |
+            python -m pip install pytest
+            python -m pytest
   ```
 
-- We need to run `actions/checkout@v2` in each job
+- We need to run `actions/checkout` in each job
     - We could share the repository between jobs via artifacts, but that is uncommon.
-- We need to run `actions/setup-python@v2` since jobs do not share the environment.
+- We need to run `actions/setup-python` since jobs do not share the environment.
 - We specify dependencies by `needs` such that the steps run after each other.
 - We do not have a real build step since it is Python. However, this might be interesting for compiled code.
 
 ## 3. Other Workflows
 
 - Show workflows of [preCICE](https://github.com/precice/precice)
-  - Show `Actions` tab
-    - `Build and test` job, click on a run
-    - Jobs created through test matrix
-    - Click on a job, click on a few steps
-  - Show `workflows` folder, click on `Build and Test`
-  - Only one job. `build`, `test`, ... are modeled as steps
-- If time allows, quickly show DuMuX CI (and explain that GitLab CI works differently)
+    - Show `Actions` tab
+        - `Build and test` job, click on a run
+        - Jobs created through test matrix
+        - Click on a job, click on a few steps
+    - Show `workflows` folder, click on `Build and Test`
+    - Only one job. `build`, `test`, ... are modeled as steps
 
 ## 4. act Demo
 
@@ -135,3 +138,36 @@
   ```bash
   act -j test
   ```
+
+## 5. GitLab CI
+
+In GitLab CI, the same workflow (pipeline) would look as follows, in a `.gitlab-ci.yml` file:
+
+```yaml
+stages:
+  - style
+  - build
+  - test
+
+# Image on which to run the pipeline
+image: ajaust/automation-lecture
+
+check_style:
+  stage: style
+  script:
+    - pip install black
+    - black --check .
+
+build_code:
+  stage: build
+  variables:
+    PROJECT_NAME: "Automation Lecture"
+  script:
+    - echo "Building project $PROJECT_NAME"
+
+test_code:
+  stage: test
+  script:
+    - python -m pip install pytest
+    - python -m pytest
+```
