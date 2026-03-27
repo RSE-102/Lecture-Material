@@ -2,9 +2,7 @@
 
 In this exercise, we create automated workflows and pipelines based on GitHub Actions. We are again working with our beloved diffusion Python code.
 
-## Preparations
-
-Import (not fork) the [automation exercise repository](https://github.com/RSE-102/automation-exercise) into your own account/namespace on GitHub.
+Fork or import the [automation exercise repository](https://github.com/RSE-102/automation-exercise) into your own account/namespace on GitHub.
 
 **Note**: We cannot work with forks here because GitHub Actions may not work in pull requests without explicit approval of the owner of the target repository. It is also easier to add badges (see below) to the `README.md` if the repository is under your control.
 
