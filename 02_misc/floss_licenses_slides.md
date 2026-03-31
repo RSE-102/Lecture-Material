@@ -135,9 +135,9 @@ THE SOFTWARE IS PROVIDED "AS IS", ...
 - Two main restrictions:
     - (A) If you modify software and share it (e.g. sell binary), you need to publish the source code of the modification under the same license.
     - (B) If you use software in larger works (e.g. through interfaces or data structures), restriction (A) holds for larger works as well.
-        - Example: DuMuX is GPLv3. Thus, if you publish a solver using DuMuX, it needs to be GPLv3 again.
+        - Example: DuMuX is GPLv3. Thus, if you publish a solver using DuMuX, it needs to be GPLv3 too.
 - **GNU LGPL**: "L" stands for lesser (sometimes also for library)
-    - Only restriction A, not B
+    - Only restriction (A), not (B)
         - Example: preCICE is LGPLv3. Thus, an adapter using preCICE can be made a commercial product.
 
 ---
@@ -151,7 +151,7 @@ THE SOFTWARE IS PROVIDED "AS IS", ...
     - **-BY**: attribution -> you need to credit original creation
     - **-SA**: share alike -> modifications need same license (similar to copyleft)
     - **-ND**: no derivatives -> you are not allowed to modify
-    - **-NC**: non-commercial -> you cannot use in commercial context
+    - **-NC**: non-commercial -> you cannot use in commercial context (even in a nonprofit organization)
 - Combine as you want, e.g. **CC-BY-NC**
 
 ---

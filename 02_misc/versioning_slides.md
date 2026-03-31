@@ -52,21 +52,24 @@ slideOptions:
 - Semantic versioning
     - [Linux Kernel](https://kernel.org/): 5.16.5 (Release), 5.17-rc2 (Preview)
 - [PEP 440](https://www.python.org/dev/peps/pep-0440/)
-    - [pyMOR](https://pymor.org/): 2022.2.0
+    - [pyMOR](https://pymor.org/): 2025.2.0
 - Calendar versioning
-    - [Ubuntu](ubuntu.com/): 22.10 (Latest), 22.04 (LTS)
-    - [OpenFOAM](https://www.openfoam.com/current-release) (`.com`): v2112
+    - [Ubuntu](ubuntu.com/): 25.10 (Latest), 24.04 (LTS)
+    - [OpenFOAM](https://www.openfoam.com/current-release) (`.com`): v2512
 - Others
     - [TeX](https://tug.org/): 3.141592653 (Latest), 3.14159265 (Ubuntu 20.04)
-    - [OpenFOAM](https://openfoam.org/release/) (`.org`): 10 (Latest), but "always releasable" (date patches, e.g. `20221128`)
+    - [OpenFOAM](https://openfoam.org/release/) (`.org`): 13 (Latest), but "always releasable" (date patches, e.g. `20221128`)
 
 ---
 
 ## Versioning Standards
 
-- [Semantic Versioning](https://semver.org/)
 - [Calendar Versioning](https://calver.org/)
+    - useful to coordinate related projects
 - [PEP 440](https://www.python.org/dev/peps/pep-0440/)
+    - flexible versioning with metadata
+- [Semantic Versioning](https://semver.org/)
+    - versioning with compatibility promises
 
 ---
 
