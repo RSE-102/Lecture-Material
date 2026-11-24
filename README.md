@@ -11,14 +11,17 @@ This is course material for a one-week graduate school block course, which is re
 - Testing and continuous integration
 - Building and packaging
 - Software design principles
+- GenAI tools
 
 Skills in these areas are crucial for developing or contributing to quality-assured software in collaborative environments and are very useful in today’s research landscape.
 
 ## Next course
 
-**March 23-27, 2026** at the University of Stuttgart in [U32.225](https://campus.uni-stuttgart.de/cusonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/ris.einzelRaum?raumKey=7438&$ctx=design=ca2;lang=;profile=) with the *reflection day* on **May 6, 2026** (different room then, ground floor SimTech building). Registration via [Campus](https://campus.uni-stuttgart.de/cusonline/wbLv.wbShowLVDetail?pStpSpNr=420424) or (if you are not a student and cannot access) via mail to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come first serve.
+**March 15-19, 2027** at the University of Stuttgart in [PWR 05A - 0.009 (ground floor SimTech building)](https://campus.uni-stuttgart.de/cusonline/ris.ris?corg=251060&pQuellGeogrBTypNr=5&pZielGeogrBTypNr=5&pZielGeogrBerNr=5890009&pRaumNr=6989&pActionFlag=A&pShowEinzelraum=J) with the *reflection day* in May or June (exact date tbd.). Registration via [Campus](https://campus.uni-stuttgart.de/cusonline/wbLv.wbShowLVDetail?pStpSpNr=460199) or (if you are not a student and cannot access) via email to [benjamin.uekermann@ipvs.uni-stuttgart.de](mailto:benjamin.uekermann@ipvs.uni-stuttgart.de). Limited seats, first come, first served.
 
 ## Timetable and content
+
+*Under construction; we will add a new day on GenAI tools*
 
 ### Day 1: Orga and Git
 
@@ -60,7 +63,8 @@ Skills in these areas are crucial for developing or contributing to quality-assu
 
 - The first course ran from Tuesday, October 4 to Friday, October 7, 2022, with the *reflection day* on December 6, 2022.
 - There was no course in 2023. Instead, we organized a week-long summer school on [Research Software Engineering with Julia: Basics, Visualization, and Statistics](https://www.simtech.uni-stuttgart.de/events/simtech-summer-school/SuSch_2/)
-- The second course ran from Monday, October 7 to Friday, October 11, 2024 with the *reflection day* on December 10, 2024.
+- The second course ran from Monday, October 7 to Friday, October 11, 2024, with the *reflection day* on December 10, 2024.
+- The third course ran from Monday, March 23 to Friday, March 27, 2026, with the *reflection day* on May 6, 2026.
 
 ## Credits
 
